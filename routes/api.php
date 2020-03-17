@@ -18,3 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
+Route::get('/person', 'Api\PersonController@index');
+///all routes in API have prefix 'api'
+/// is the same as 'api/person'
+
+
